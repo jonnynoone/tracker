@@ -2,11 +2,6 @@
 
 include "database.php";
 
-echo "Connected...";
-echo "<br>";
-
-$name = "Jonny";
-
 $query = "SELECT * FROM walking";
 $result = mysqli_query($connect, $query);
 
@@ -16,7 +11,8 @@ echo "
             <tr>
                 <th>ID</th>
                 <th>Date</th>
-                <th>Walked</th>
+                <th>Walk</th>
+                <th>Reverse K</th>
             </tr>
         </thead>
 
@@ -28,7 +24,8 @@ while($row = mysqli_fetch_assoc($result)) {
         <tr>
             <td>" . $row['id'] . "</td>
             <td>" . $row['date'] . "</td>
-            <td>" . $row['walked'] . "</td>
+            <td>" . $row['walk'] . "</td>
+            <td>" . $row['revk'] . "</td>
         </tr>
     ";
 }
