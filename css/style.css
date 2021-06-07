@@ -1,0 +1,12 @@
+#tracker {
+    margin: 0 auto;
+    width: 600px;
+}
+
+#tracker td {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
